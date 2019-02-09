@@ -14,6 +14,12 @@
 		DC82C79F220E0F80006F096A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC82C79D220E0F80006F096A /* LaunchScreen.storyboard */; };
 		DC82C7AA220E0F80006F096A /* mobile_app_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC82C7A9220E0F80006F096A /* mobile_app_testTests.swift */; };
 		DC82C7B5220E0F80006F096A /* mobile_app_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC82C7B4220E0F80006F096A /* mobile_app_testUITests.swift */; };
+		DC82C7C6220E1195006F096A /* ImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC82C7C5220E1195006F096A /* ImageCacheManager.swift */; };
+		DC82C7C9220E12D0006F096A /* ImagesConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC82C7C8220E12D0006F096A /* ImagesConstants.swift */; };
+		DC82C7CC220E13E1006F096A /* MobileAppTestImagesGridVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC82C7CB220E13E1006F096A /* MobileAppTestImagesGridVC.swift */; };
+		DC82C7D1220E1493006F096A /* MobileAppTestImagesGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC82C7D0220E1493006F096A /* MobileAppTestImagesGridView.swift */; };
+		DC82C7D4220E16E9006F096A /* MobileAppTestimageCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC82C7D3220E16E9006F096A /* MobileAppTestimageCellView.swift */; };
+		DC82C7D6220E252C006F096A /* MobileAppTestImagesGridView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC82C7D5220E252C006F096A /* MobileAppTestImagesGridView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		DC82C7B0220E0F80006F096A /* mobile-app-testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mobile-app-testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC82C7B4220E0F80006F096A /* mobile_app_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mobile_app_testUITests.swift; sourceTree = "<group>"; };
 		DC82C7B6220E0F80006F096A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC82C7C5220E1195006F096A /* ImageCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheManager.swift; sourceTree = "<group>"; };
+		DC82C7C8220E12D0006F096A /* ImagesConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesConstants.swift; sourceTree = "<group>"; };
+		DC82C7CB220E13E1006F096A /* MobileAppTestImagesGridVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileAppTestImagesGridVC.swift; sourceTree = "<group>"; };
+		DC82C7D0220E1493006F096A /* MobileAppTestImagesGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileAppTestImagesGridView.swift; sourceTree = "<group>"; };
+		DC82C7D3220E16E9006F096A /* MobileAppTestimageCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileAppTestimageCellView.swift; sourceTree = "<group>"; };
+		DC82C7D5220E252C006F096A /* MobileAppTestImagesGridView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MobileAppTestImagesGridView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +109,10 @@
 		DC82C793220E0F7E006F096A /* mobile-app-test */ = {
 			isa = PBXGroup;
 			children = (
+				DC82C7CD220E140B006F096A /* Views */,
+				DC82C7CA220E1353006F096A /* ViewControllers */,
+				DC82C7C7220E12AA006F096A /* Constants */,
+				DC82C7C4220E1173006F096A /* Managers */,
 				DC82C794220E0F7E006F096A /* AppDelegate.swift */,
 				DC82C796220E0F7E006F096A /* ViewController.swift */,
 				DC82C798220E0F7E006F096A /* Main.storyboard */,
@@ -123,6 +139,48 @@
 				DC82C7B6220E0F80006F096A /* Info.plist */,
 			);
 			path = "mobile-app-testUITests";
+			sourceTree = "<group>";
+		};
+		DC82C7C4220E1173006F096A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				DC82C7C5220E1195006F096A /* ImageCacheManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		DC82C7C7220E12AA006F096A /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				DC82C7C8220E12D0006F096A /* ImagesConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		DC82C7CA220E1353006F096A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DC82C7CB220E13E1006F096A /* MobileAppTestImagesGridVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DC82C7CD220E140B006F096A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DC82C7D2220E1694006F096A /* MobileAppTestImagesGrid */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DC82C7D2220E1694006F096A /* MobileAppTestImagesGrid */ = {
+			isa = PBXGroup;
+			children = (
+				DC82C7D0220E1493006F096A /* MobileAppTestImagesGridView.swift */,
+				DC82C7D3220E16E9006F096A /* MobileAppTestimageCellView.swift */,
+				DC82C7D5220E252C006F096A /* MobileAppTestImagesGridView.xib */,
+			);
+			path = MobileAppTestImagesGrid;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC82C7D6220E252C006F096A /* MobileAppTestImagesGridView.xib in Resources */,
 				DC82C79F220E0F80006F096A /* LaunchScreen.storyboard in Resources */,
 				DC82C79C220E0F80006F096A /* Assets.xcassets in Resources */,
 				DC82C79A220E0F7E006F096A /* Main.storyboard in Resources */,
@@ -256,8 +315,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC82C7D1220E1493006F096A /* MobileAppTestImagesGridView.swift in Sources */,
+				DC82C7C6220E1195006F096A /* ImageCacheManager.swift in Sources */,
+				DC82C7D4220E16E9006F096A /* MobileAppTestimageCellView.swift in Sources */,
 				DC82C797220E0F7E006F096A /* ViewController.swift in Sources */,
 				DC82C795220E0F7E006F096A /* AppDelegate.swift in Sources */,
+				DC82C7CC220E13E1006F096A /* MobileAppTestImagesGridVC.swift in Sources */,
+				DC82C7C9220E12D0006F096A /* ImagesConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
